@@ -75,6 +75,52 @@ header .menu .branco a{
 }
 
 
+/*---------------------------------------------*/
+
+.sobre {
+    height: 665px;
+    background-color: black;
+}
+
+.sobre h1{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.sobre .sobreE {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 600px;
+    float: left;
+}
+
+.sobre .sobreE p {
+    color: rgb(6, 134, 91);
+    font-size: 30px;
+}
+
+.sobre .sobreD {
+    float: right;
+    width: 600px;
+    margin-right: 20px;
+
+}
+
+.sobre .sobreD h3 {
+    color: rgb(9, 161, 108);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.sobre .sobreD video {
+    padding-bottom: 80px;
+}
 
 
 /*---------------------------------------------*/
