@@ -154,16 +154,33 @@ header .menu .branco a{
     height: 50px;
     border-radius: 10px 10px 10px 10px;
     background-image: linear-gradient(to bottom right, red, orange);
+    box-shadow: 0px 0px 20px orangered;
     color: white;
     border: 0px;
 }
 
 .sobrebutton button:hover {
-    box-shadow: 0px 0px 40px orangered;
-    width: 240px;
-    height: 50px;
-    transition-duration: 1s;
+    /*box-shadow: 0px 0px 40px orangered;*/
     cursor: pointer;
+    animation: teste 2s infinite;
+}
+@keyframes teste {
+    0% {
+        transform: scale(1.1);
+        
+        filter: brightness(100%);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 20px orangered;
+        filter: brightness(200%);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px orangered;
+        filter: brightness(100%);
+    }
+    
 }
 
 /*---------------------------------------------*/
@@ -254,16 +271,17 @@ header .menu .branco a{
 }
 
 @keyframes compra {
-    to {
-        transform: translateY(0px)
+    0% {
+        transform: scale(1.1);
     }
-    from {
-        transform: translateY(40px);
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 70px black;
     }
 }
 
 .center:hover {
-    animation: compra 1.3s;
+    animation: compra 2s;
 }
 
 .center {
