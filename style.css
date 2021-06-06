@@ -6,6 +6,7 @@
 
 body { /*corpo*/
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -14,12 +15,29 @@ header {
     text-align: right;
 }
 
+
 header ul li{
     display: inline;
     padding: 28px;
     color: rgb(6, 143, 102);
     font-size: 20px;
 }
+
+@keyframes up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+
+
 header .menu ul a {
     text-decoration: none;
     color:rgb(6, 134, 91);
@@ -28,12 +46,10 @@ header .menu ul a {
 header .menu .branco a{
     color: white;
 }
-
-
 /*---------------------------------------------*/
 
 .corpo{
-    height: 600px;
+    height: 100vh;
 }
 
 .texto {
@@ -41,6 +57,7 @@ header .menu .branco a{
     padding-left: 40px;
     width: 50%;
     float: left;
+    animation: up 2s 1;
 }
 
 .texto h1 {
@@ -71,6 +88,7 @@ header .menu .branco a{
     width: 650px;
     float: right;
     margin-top: 130px;
+    animation: up 2s 1;
 
 }
 
@@ -80,6 +98,8 @@ header .menu .branco a{
 .sobre {
     height: 665px;
     background-color: black;
+    animation: animeDown 1.3s;
+
 }
 
 .sobre h1{
@@ -105,6 +125,7 @@ header .menu .branco a{
 .sobre .sobreD {
     float: right;
     width: 600px;
+    height: 452px;
     margin-right: 20px;
 
 }
@@ -122,6 +143,28 @@ header .menu .branco a{
     padding-bottom: 80px;
 }
 
+.sobrebutton {
+    margin-top: 500px;
+    height: 100px;
+    align-content: center;
+}
+
+.sobrebutton button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: linear-gradient(to bottom right, red, orange);
+    color: white;
+    border: 0px;
+}
+
+.sobrebutton button:hover {
+    box-shadow: 0px 0px 40px orangered;
+    width: 240px;
+    height: 50px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
 
 /*---------------------------------------------*/
 
@@ -208,6 +251,19 @@ header .menu .branco a{
     margin-top: 60px;
     height: 700px;
     
+}
+
+@keyframes compra {
+    to {
+        transform: translateY(0px)
+    }
+    from {
+        transform: translateY(40px);
+    }
+}
+
+.center:hover {
+    animation: compra 1.3s;
 }
 
 .center {
